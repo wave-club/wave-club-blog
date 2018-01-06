@@ -36,8 +36,8 @@ Date.prototype.format = function (format) {
 /**
  * @class Date 时间戳格式转换
  * @descrption  依赖于 Date.prototype.format
- * **使用方式 1514851200.toDateFormat('yyyy-MM-dd  HH:mm:ss w')
- * **返回值 "2018-01-06  13:51:36 星期六"
+ * **使用方式 Number(1514764800).toDateFormat('yyyy-MM-dd HH:mm:ss w')
+ * **返回值 "2018-01-01 08:00:00 星期一"
  **/
 
 Number.prototype.toDateFormat =  function (format) {
