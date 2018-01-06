@@ -6,8 +6,8 @@
  **/
 
 Date.prototype.format = function (format) {
-    var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
-    var date = {
+    let weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+    let date = {
         "M+": this.getMonth() + 1,
         "d+": this.getDate(),
         "H+": this.getHours(),
@@ -20,7 +20,7 @@ Date.prototype.format = function (format) {
     if (/(y+)/i.test(format)) {
         format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length))
     }
-    for (var k in date) {
+    for (let k in date) {
         if (date.hasOwnProperty(k)) {
             if (k === "w+") {
                 format = format.replace("w", weekdays[date[k]])
@@ -31,4 +31,16 @@ Date.prototype.format = function (format) {
         }
     }
     return format
+}
+
+/**
+ * @class Date 时间戳格式转换
+ * @descrption  依赖于 Date.prototype.format
+ * **使用方式 1514851200.toDateFormat('yyyy-MM-dd  HH:mm:ss w')
+ * **返回值 "2018-01-06  13:51:36 星期六"
+ **/
+
+Number.prototype.toDateFormat =  function (format) {
+    let date = new Date(this * 1000)
+    return date.format(format)
 }
