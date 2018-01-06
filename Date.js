@@ -40,7 +40,33 @@ Date.prototype.format = function (format) {
  * **返回值 "2018-01-01 08:00:00 星期一"
  **/
 
-Number.prototype.toDateFormat =  function (format) {
+Number.prototype.toDateFormat = function (format) {
+    if (isNaN(this)) throw SyntaxError("时间戳错误")
     let date = new Date(this * 1000)
     return date.format(format)
+}
+
+/**
+ * @class Date 时间戳格式转换成距离现在多久 几 "年","天","小时","分钟","秒钟" 前
+ * @descrption
+ * **使用方式
+ * **返回值
+ **/
+
+
+Number.prototype.toDistanceNow = function () {
+    if (isNaN(this)) throw SyntaxError("时间戳错误")
+    let resTime = [],
+        result = '',
+        byTime = [365 * 24 * 60 * 60 * 1000, 24 * 60 * 60 * 1000, 60 * 60 * 1000, 60 * 1000, 1000],
+        unit = ["年", "天", "小时", "分钟", "秒钟"],
+        ct = new Date().getTime() - Number(this * 1000)
+    for (let i = 0; i < byTime.length; i++) {
+        if (ct > byTime[i]) {
+            let temp = Math.floor(ct / byTime[i])
+            result = temp + unit[i] + '前'
+            break
+        }
+    }
+    return result
 }
