@@ -46,7 +46,7 @@
      
      
 #面试题
-     * [专题系列](zt.md)
+[专题系列](zt.md)
          - [如何实现一个 Git Diff 解析器](./Front-end interview/zt/zt-diff.md)
          - [react-redux 之 connect 方法详解](./zt/js-redux.md)
          - [细说 webpack 之流程篇](./zt/zt-webpack.md)
