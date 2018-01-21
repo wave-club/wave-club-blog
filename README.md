@@ -6,8 +6,7 @@
 npm install rtcs --save
 ```
 
-[文档](https://github.com/976500133/rtcs)
-
+[详情文档](https://github.com/976500133/rtcs)
 
 
 # Util
