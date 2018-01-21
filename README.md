@@ -1,3 +1,15 @@
+#React Rtcs
+
+## Install
+
+```bash
+npm install rtcs --save
+```
+
+[文档](https://github.com/976500133/rtcs)
+
+
+
 # Util
 
 
