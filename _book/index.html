@@ -1,0 +1,420 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="react-rtcs">React Rtcs</h1>
+<h2 id="install">Install</h2>
+<pre><code class="lang-bash">npm install rtcs --save
+</code></pre>
+<p><a href="https://github.com/976500133/rtcs" target="_blank">&#x8BE6;&#x60C5;&#x6587;&#x6863;</a></p>
+<h1 id="util">Util</h1>
+<h3 id="&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h3>
+<hr>
+<p>|--Date.js &#xFF08;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF09;<br>
+|&#x2003;&#x2003;|-------  Date.prototype.format  <br>
+|&#x2003;&#x2003;|-------  Number.prototype.toDateFormat  <br>
+|&#x2003;&#x2003;|-------  Number.prototype.toDistanceNow  <br></p>
+<h3 id="&#x4F7F;&#x7528;&#x5C55;&#x793A;">&#x4F7F;&#x7528;&#x5C55;&#x793A;</h3>
+<h5 id="dateprototypeformat">Date.prototype.format</h5>
+<pre><code>/**
+ * @class Date &#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x8F6C;&#x6362;
+ * @descrption
+ * **&#x4F7F;&#x7528;&#x65B9;&#x5F0F; new Date().format(&apos;yyyy-MM-dd  HH:mm:ss w&apos;)
+ * **&#x8FD4;&#x56DE;&#x503C; &quot;2018-01-06  13:51:36 &#x661F;&#x671F;&#x516D;&quot;
+ **/
+</code></pre><h5 id="numberprototypetodateformat">Number.prototype.toDateFormat</h5>
+<pre><code>/**
+* @class Number &#x65F6;&#x95F4;&#x6233;&#x683C;&#x5F0F;&#x8F6C;&#x6362;
+* @descrption  &#x4F9D;&#x8D56;&#x4E8E; Date.prototype.format
+* **&#x4F7F;&#x7528;&#x65B9;&#x5F0F; Number(1514764800).toDateFormat(&apos;yyyy-MM-dd HH:mm:ss w&apos;)
+* **&#x8FD4;&#x56DE;&#x503C; &quot;2018-01-01 08:00:00 &#x661F;&#x671F;&#x4E00;&quot;
+ **/
+</code></pre><h5 id="numberprototypetodistancenow">Number.prototype.toDistanceNow</h5>
+<pre><code>/**
+ * @class Number
+ * @descrption &#x65F6;&#x95F4;&#x6233;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x6210;&#x8DDD;&#x79BB;&#x73B0;&#x5728;&#x591A;&#x4E45; &#x51E0; &quot;&#x5E74;&quot;,&quot;&#x5929;&quot;,&quot;&#x5C0F;&#x65F6;&quot;,&quot;&#x5206;&#x949F;&quot;,&quot;&#x79D2;&#x949F;&quot; &#x524D;
+ * **&#x4F7F;&#x7528;&#x65B9;&#x5F0F;  Number(1514764800).toDistanceNow()
+ * **&#x8FD4;&#x56DE;&#x503C;  &quot;5&#x5929;&#x524D;&quot;
+ **/
+</code></pre><h1 id="interview">Interview</h1>
+<ul>
+<li><a href="./">&#x672C;&#x4E66;&#x7B80;&#x4ECB;</a></li>
+<li><a href="zt.md">&#x4E13;&#x9898;&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/zt/zt-diff.md">&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A; Git Diff &#x89E3;&#x6790;&#x5668;</a></li>
+<li><a href="interview/zt/js-redux.md">react-redux &#x4E4B; connect &#x65B9;&#x6CD5;&#x8BE6;&#x89E3;</a></li>
+<li><a href="interview/zt/zt-webpack.md">&#x7EC6;&#x8BF4; webpack &#x4E4B;&#x6D41;&#x7A0B;&#x7BC7;</a></li>
+<li><a href="interview/zt/js-error.md">JavaScript &#x4E2D;&#x7684;&#x9519;&#x8BEF;&#x9694;&#x79BB;</a></li>
+<li><a href="interview/zt/js-er2015.md">&#x5B66;&#x4E60;ES2015</a></li>
+<li><a href="interview/zt/zt-webpack-qa.md">webpack &#x5E38;&#x89C1;&#x95EE;&#x9898;</a></li>
+<li><a href="interview/zt/zt-webpack-origin.md">webpack&#x6253;&#x5305;&#x539F;&#x7406;&#x89E3;&#x6790;</a></li>
+<li><a href="interview/zt/js-wangeditor.md">WangEditor&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x76F4;&#x63A5;&#x5F39;&#x51FA;&#x9009;&#x62E9;&#x6587;&#x4EF6;&#x7A97;&#x53E3;&#xFF0C;&#x4E0D;&#x663E;&#x793A;&#x4E0B;&#x62C9;&#x6846;&#x7684;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;</a></li>
+<li><a href="interview/zt/webpack-code-spliting.md">webpack &#x4EE3;&#x7801;&#x5206;&#x79BB;</a></li>
+<li><a href="interview/zt/js-suanfa.md">&#x524D;&#x7AEF;&#x9762;&#x8BD5;&#x5FC5;&#x5907;&#x2014;&#x2014;&#x5341;&#x5927;&#x7ECF;&#x5178;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">HTTP&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/http/http-post-get.md">99%&#x7684;&#x4EBA;&#x7406;&#x89E3;&#x9519; HTTP &#x4E2D; GET &#x4E0E; POST &#x7684;&#x533A;&#x522B;</a></li>
+<li><a href="interview/http/HTTP-analysis.md">HTTP &#x6DF1;&#x5165;&#x8BE6;&#x89E3;</a></li>
+<li><a href="interview/http/http-ajax.md">HTTP AJAX &#x4ECB;&#x7ECD;</a></li>
+<li><a href="interview/http/http-ajax-delete-cache.md">Ajax &#x89E3;&#x51B3;&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;&#x95EE;&#x9898;</a></li>
+<li><a href="interview/http/http-meituan.md">&#x6027;&#x80FD;&#x4F18;&#x5316;&#x4E4B;&#x8DEF;&#x2014;&#x2014;&#x6027;&#x80FD;&#x6307;&#x6807;&#x4F53;&#x7CFB;</a></li>
+<li><a href="interview/http/http-render.md">&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4ECE;&#x8F93;&#x5165; URL &#x5230;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x663E;&#x793A;&#x5B8C;&#x6210;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x90FD;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;</a></li>
+<li><a href="interview/http/http-watch.md">&#x76D1;&#x63A7;&#x5E73;&#x53F0;&#x524D;&#x7AEF;SDK&#x5F00;&#x53D1;&#x5B9E;&#x8DF5;</a></li>
+<li><a href="interview/http/http-white.md">&#x9996;&#x5C4F;&#x3001;&#x767D;&#x5C4F;&#x65F6;&#x95F4;&#x5982;&#x4F55;&#x8BA1;&#x7B97;</a></li>
+<li><a href="interview/http/http-post-urlcode.md">Http POST &#x63D0;&#x4EA4;&#x6570;&#x636E;&#x7684;&#x56DB;&#x79CD;&#x65B9;&#x5F0F;&#x89E3;&#x6790;</a></li>
+<li><a href="interview/http/html-global.md">html&#x5168;&#x5C40;&#x5C5E;&#x6027;&#x6709;&#x54EA;&#x4E9B;</a></li>
+<li><a href="interview/http/http-http.md">&#x524D;&#x7AEF;&#x6027;&#x80FD;&#x6BEB;&#x79D2;&#x5FC5;&#x4E89;&#x65B9;&#x6848;(-) HTTP&#x8BF7;&#x6C42;</a></li>
+<li><a href="interview/http/http-cache.md">&#x524D;&#x7AEF;&#x6027;&#x80FD;&#x6BEB;&#x79D2;&#x5FC5;&#x4E89;&#x65B9;&#x6848;(&#x4E8C;) HTTP&#x7F13;&#x5B58;</a></li>
+<li><a href="interview/http/http-01.md">&#x524D;&#x7AEF;&#x6027;&#x80FD;&#x6BEB;&#x79D2;&#x5FC5;&#x4E89;&#x7EFC;&#x5408;&#x65B9;&#x6848;</a></li>
+<li><a href="interview/http/http-method.md">HTTP METHOD &#x4ECB;&#x7ECD;</a></li>
+<li><a href="interview/http/http-status.md">http&#x72B6;&#x6001;&#x7801;&#x6709;&#x90A3;&#x4E9B;&#xFF1F;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">HTML&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/html/DOCTYPE.md">DOCTYPE&#x7684;&#x4F5C;&#x7528;</a></li>
+<li><a href="interview/html/html-reflow-repaint.md">&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x539F;&#x7406;</a></li>
+<li><a href="interview/html/seo.md">&#x524D;&#x7AEF;SEO</a></li>
+<li><a href="interview/html/web-talk.md">web&#x5F00;&#x53D1;&#x4E2D;&#x4F1A;&#x8BDD;&#x8DDF;&#x8E2A;&#x7684;&#x65B9;&#x6CD5;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">CSS&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/css/block-inline.md">&#x884C;&#x5185;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x6709;&#x54EA;&#x4E9B;</a></li>
+<li><a href="interview/css/css-center.md">&#x5C45;&#x4E2D;div&#x6709;&#x54EA;&#x4E9B;&#x65B9;&#x5F0F;</a></li>
+<li><a href="interview/css/css-zindex.md">&#x5C42;&#x53E0;&#x987A;&#x5E8F;&#xFF08;stacking level&#xFF09;&#x4E0E;&#x5806;&#x6808;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;stacking context&#xFF09;&#x77E5;&#x591A;&#x5C11;&#xFF1F;</a></li>
+<li><a href="interview/css/css-animation-background.md">&#x5DE7;&#x5999;&#x5730;&#x5236;&#x4F5C;&#x80CC;&#x666F;&#x8272;&#x6E10;&#x53D8;&#x52A8;&#x753B;</a></li>
+<li><a href="interview/css/css-bfc.md">&#x5757;&#x7EA7;&#x683C;&#x5F0F;&#x5316;&#x4E0A;&#x4E0B;&#x6587;bfc</a></li>
+<li><a href="interview/css/css-triangle.md">&#x7EAF;CSS&#x7ED8;&#x5236;&#x4E09;&#x89D2;&#x5F62;</a></li>
+<li><a href="interview/css/css-qz.md">css&#x5B9A;&#x4E49;&#x7684;&#x6743;&#x91CD;</a></li>
+<li><a href="interview/css/css-position-relative.md">position&#x7684;&#x503C;relative&#x548C;absolute&#x5B9A;&#x4F4D;&#x539F;&#x70B9;&#x662F;</a></li>
+<li><a href="interview/css/css-clear-float.md">css &#x6E05;&#x9664;&#x6D6E;&#x52A8;</a></li>
+<li><a href="interview/css/css-clear.md">&#x5982;&#x4F55;&#x6E05;&#x7406;&#x6D6E;&#x52A8;&#xFF08;2&#xFF09;</a></li>
+<li><a href="interview/css/css-extend.md">CSS &#x7EE7;&#x627F;</a></li>
+<li><a href="interview/css/css-new.md">CSS3&#x6709;&#x54EA;&#x4E9B;&#x65B0;&#x7279;&#x6027;</a></li>
+<li><a href="interview/css/css-pixel.md">css&#x5355;&#x4F4D;&#x6709;&#x54EA;&#x4E9B;</a></li>
+<li><a href="interview/css/css-selected.md">css&#x9009;&#x62E9;&#x7B26;</a></li>
+<li><a href="interview/css/link-import.md">link&#x548C;import&#x7684;&#x533A;&#x522B;</a></li>
+<li><a href="interview/css/sass-less-scss.md">Sass Less SCSS &#x7684;&#x6289;&#x62E9;</a></li>
+<li><a href="interview/css/css-text-overflow.md">&#x5355;&#x884C;&#x5C45;&#x4E2D;&#x663E;&#x793A;&#x6587;&#x5B57;&#xFF0C;&#x591A;&#x884C;&#x5C45;&#x5DE6;&#x663E;&#x793A;&#xFF0C;&#x6700;&#x591A;&#x4E24;&#x884C;&#x8D85;&#x8FC7;&#x7528;&#x7701;&#x7565;&#x53F7;&#x7ED3;&#x5C3E;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">JAVASCRIPT&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/javascript/js-brower-history.md">&#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x6838;&#x4ECB;&#x7ECD;&#x548C;&#x5386;&#x53F2;</a></li>
+<li><a href="interview/javascript/js-webkit.md">&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x6838;&#x548C;JavaScript&#x5355;&#x7EBF;&#x7A0B;</a></li>
+<li><a href="interview/javascript/js-webkit-thred.md">&#x6D4F;&#x89C8;&#x5668;&#x8FDB;&#x7A0B;&#xFF1F;&#x7EBF;&#x7A0B;&#xFF1F;&#x50BB;&#x50BB;&#x5206;&#x4E0D;&#x6E05;&#x695A;&#xFF01;</a></li>
+<li><a href="interview/javascript/js-arr-func.md">js&#x7BAD;&#x5934;&#x51FD;&#x6570;</a></li>
+<li><a href="interview/javascript/js-assign.md">Object.assign &#x8BE6;&#x7EC6;&#x4F7F;&#x7528;</a></li>
+<li><a href="interview/javascript/js-offset-clinet-scroll.md">&#x5BB9;&#x6613;&#x6DF7;&#x6DC6;&#x7684;DOM&#x5143;&#x7D20;&#x5C3A;&#x5BF8;client-<em>&#x3001;scroll-</em>&#x3001; offset-*</a></li>
+<li><a href="interview/javascript/js-throttle.md">&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x61D2;&#x52A0;&#x8F7D;&#x4E86;&#x89E3;&#x8282;&#x6D41;&#x548C;&#x53BB;&#x6296;</a></li>
+<li><a href="interview/javascript/js-arguments.md">arguments &#x8BE6;&#x89E3;</a></li>
+<li><a href="interview/javascript/js-dom.md">DOM&#x4E8B;&#x4EF6;&#x7C7B;</a></li>
+<li><a href="interview/javascript/js-arr-func.md">js&#x7BAD;&#x5934;&#x51FD;&#x6570;</a></li>
+<li><a href="interview/javascript/js-copy.md">javascripts &#x6D45;&#x62F7;&#x8D1D;&#x548C;&#x6DF1;&#x62F7;&#x8D1D;</a></li>
+<li><a href="interview/javascript/js-addevent.md">&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x4E8B;&#x4EF6;&#x4FA6;&#x542C;&#x5668;&#x51FD;&#x6570;</a></li>
+<li><a href="interview/javascript/js-clourse.md">&#x4EC0;&#x4E48;&#x662F;&#x95ED;&#x5305;&#xFF08;closure&#xFF09;</a></li>
+<li><a href="interview/javascript/js-array.md">js&#x6570;&#x7EC4;&#x8BE6;&#x89E3;</a></li>
+<li><a href="interview/javascript/js-string.md">js&#x5B57;&#x7B26;&#x4E32;&#x8BE6;&#x89E3;</a></li>
+<li><a href="interview/javascript/js-function.md">&#x6D45;&#x8C08;javascript&#x7684;&#x51FD;&#x6570;&#x8282;&#x6D41;</a></li>
+<li><a href="interview/javascript/js-img-load.md">&#x56FE;&#x7247;&#x61D2;&#x52A0;&#x8F7D;</a></li>
+<li><a href="interview/javascript/js-cookie.md">&#x4EC0;&#x4E48;&#x662F;Cookie &#x9694;&#x79BB;</a></li>
+<li><a href="interview/javascript/js-deepcopy.md">js&#x5BF9;&#x8C61;&#x7684;&#x6DF1;&#x5EA6;&#x514B;&#x9686;</a></li>
+<li><a href="interview/javascript/js-contextmenu.md">&#x4E00;&#x4E2A;contextmenu&#x7684;&#x63D2;&#x4EF6;</a></li>
+<li><a href="interview/javascript/js-duplicate.md">js&#x6570;&#x7EC4;&#x53BB;&#x91CD;</a></li>
+<li><a href="interview/javascript/js-xss-csrf.md">XSS &#x548C; CSRF &#x4E24;&#x79CD;&#x8DE8;&#x7AD9;&#x653B;&#x51FB;</a></li>
+<li><a href="interview/javascript/js-cookie-getset.md">web&#x7AEF;cookie&#x7684;&#x8BBE;&#x7F6E;&#x548C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;</a></li>
+<li><a href="interview/javascript/js-interview.md">&#x9762;&#x8BD5;&#x95EE;&#x9898;</a></li>
+<li><a href="interview/javascript/js-sort-random.md">&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x6570;&#x7EC4;&#x7684;&#x968F;&#x673A;&#x6392;&#x5E8F;</a></li>
+<li><a href="interview/javascript/js-parseint-map.md">[&quot;1&quot;, &quot;2&quot;, &quot;3&quot;].map(parseInt) &#x7B54;&#x6848;&#x662F;&#x591A;&#x5C11;&#xFF1F;</a></li>
+<li><a href="interview/javascript/js-dot.md">&#x5982;&#x4F55;&#x5C06;&#x6D6E;&#x70B9;&#x6570;&#x70B9;&#x5DE6;&#x8FB9;&#x7684;&#x6570;&#x6BCF;&#x4E09;&#x4F4D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#xFF0C;&#x5982;12000000.11&#x8F6C;&#x5316;&#x4E3A;&#x300E;12,000,000.11&#x300F;</a></li>
+<li><a href="interview/javascript/clientX-offsetX-screenX-pageX.md">clientX,offsetX,screenX,pageX</a></li>
+<li><a href="interview/javascript/defer-async.md">defer &#x4E0E; async</a></li>
+<li><a href="interview/javascript/es6-promise.md">ES6 &#x7684; Promise&#x5B9E;&#x8DF5;</a></li>
+<li><a href="interview/javascript/highcharts-introduce.md">Highcharts &#x6C5F;&#x6E56;&#x5C31;&#x8FD9;&#x6837;</a></li>
+<li><a href="interview/javascript/html5-history.md">HTML5&#x65E0;&#x5237;&#x65B0;&#x6539;&#x53D8;&#x5F53;&#x524D;url</a></li>
+<li><a href="interview/javascript/html5-video.md">HTML5 video &#x8BE6;&#x89E3;</a></li>
+<li><a href="interview/javascript/ie-old.md">IE-OLD IE &#x63D0;&#x793A;</a></li>
+<li><a href="interview/javascript/js-canvas-drag.md">Js &#x8FDE;&#x7EBF;&#x652F;&#x6301;&#x968F;&#x610F;&#x62D6;</a></li>
+<li><a href="interview/javascript/js-crossorigin.md">Js &#x8DE8;&#x57DF;&#x4E4B;&#x674E;&#x4EE3;&#x6843;&#x50F5;</a></li>
+<li><a href="interview/javascript/js-error.md">Js &#x4FDD;&#x8BC1;&#x4EA7;&#x54C1;&#x8D28;&#x91CF;</a></li>
+<li><a href="interview/javascript/markdown-extend.md">Markdown&#x7684;&#x6C5F;&#x6E56;&#x4E4B;&#x81EA;&#x5B9A;&#x4E49; &#xFF08;&#x6269;&#x5C55;&#xFF09;</a></li>
+<li><a href="interview/javascript/regexp-common.md">&#x901A;&#x7528;&#x6B63;&#x5219;200</a></li>
+<li><a href="interview/javascript/typeof.md">typeof &#x7684;&#x7528;&#x6CD5;</a></li>
+<li><a href="interview/javascript/undefined-null.md">undefined&#x4E0E;null&#x7684;&#x533A;&#x522B;</a></li>
+<li><a href="interview/javascript/var-let-const.md">var&#x3001;let&#x3001;const &#x533A;&#x522B;</a></li>
+<li><a href="interview/javascript/web-sso.md">webServer SSO &#x539F;&#x7406;&#x53CA;&#x5B9E;&#x73B0;</a></li>
+<li><a href="interview/javascript/Yun.js.md">Yun.js &#x5E38;&#x7528;&#x5C01;&#x88C5;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">REACT&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/react/js-react-router.md">&#x524D;&#x7AEF;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;&#x4E0E; react-router &#x6E90;&#x7801;&#x5206;&#x6790;</a></li>
+<li><a href="interview/react/react-redux-state.md">&#x5982;&#x4F55;&#x9009;&#x62E9;Redux&#x7684;store&#x548C;React&#x7684;state</a></li>
+<li><a href="interview/react/React-SyntheticEvent.md">React &#x7EFC;&#x5408;&#x4E8B;&#x4EF6; SyntheticEvent</a></li>
+<li><a href="interview/react/react-error-1.md">React &#x9519;&#x8BEF;&#x8BB0;&#x5F55;</a></li>
+<li><a href="interview/react/react-class-createClass.md">es6&#x7684;class&#x5199;&#x6CD5;&#x4E0E;es5&#x7684;createClass&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x533A;&#x522B;&#xFF1F;</a></li>
+<li><a href="interview/react/react....md">react &#x6269;&#x5C55;&#x8FD0;&#x7B97;&#x7B26;</a></li>
+<li><a href="interview/react/react-dom.md">react &#x865A;&#x62DF;DOM</a></li>
+<li><a href="interview/react/react-life.md">react &#x751F;&#x547D;&#x5468;&#x671F;</a></li>
+<li><a href="interview/react/react-event.md">react &#x4E2D;event &#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;</a></li>
+<li><a href="interview/react/react-function-class.md">&#x51FD;&#x6570;&#x7EC4;&#x4EF6; &#x548C; &#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x533A;&#x522B;</a></li>
+<li><a href="interview/react/react-key.md">react key &#x7684;&#x7406;&#x89E3;</a></li>
+<li><a href="interview/react/react-question.md">&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x6709;&#x4EC0;&#x4E48;&#x95EE;&#x9898;</a></li>
+<li><a href="interview/react/react-ref.md">React &#x4E2D;&#x7684;ref &#x4ECB;&#x7ECD;&#xFF0C; &#x4E3A;&#x4EC0;&#x4E48;&#x4ED6;&#x4EEC;&#x5F88;&#x91CD;&#x8981;</a></li>
+<li><a href="interview/react/react-setstate.md">&#x8C03;&#x7528;setState&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1F;</a></li>
+<li><a href="interview/react/react-setstate-args.md">setState &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;</a></li>
+<li><a href="interview/react/react-ajax.md">&#x5728;&#x54EA;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E8B;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F60;&#x4F1A;&#x505A;&#x51FA;AJAX&#x8BF7;&#x6C42;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;</a></li>
+<li><a href="interview/react/react-children.md">React.Children &#x548C; this.props.children</a></li>
+<li><a href="interview/react/react-controller.md">&#x53D7;&#x63A7;&#x7EC4;&#x4EF6;&#x4E0E;&#x4E0D;&#x53D7;&#x63A7;&#x5236;&#x7684;&#x7EC4;&#x4EF6;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;</a></li>
+<li><a href="interview/react/react-define.md">react &#x4ECE;&#x4F7F;&#x7528; &#x770B;&#x5B9A;&#x4E49;</a></li>
+<li><a href="interview/react/react-dom.md">&#x4EC0;&#x4E48;&#x662F;&#x865A;&#x62DF;DOM&#xFF1F;</a></li>
+<li><a href="interview/react/react-redux.md">Redux&#x4ECE;&#x8BBE;&#x8BA1;&#x5230;&#x6E90;&#x7801;</a></li>
+<li><a href="interview/react/react-elements-components.md">React Elements vs React Components</a></li>
+</ul>
+</li>
+<li><a href="README-mobile.md">WEB &#x79FB;&#x52A8;&#x7AEF;</a><ul>
+<li><a href="interview/mobile/mb-viewport.md">viewport&#x8BE6;&#x89E3;</a></li>
+</ul>
+</li>
+<li><a href="README-mobile.md">PYTHON</a><ul>
+<li><a href="interview/python/python-1.md">&#x5217;&#x8868;&#x3001;&#x5B57;&#x5178;&#x3001;&#x96C6;&#x5408;&#x4E2D;&#x6839;&#x636E;&#x6761;&#x4EF6;&#x7B5B;&#x9009;&#x6570;&#x636E;</a></li>
+<li><a href="interview/python/python-2.md">&#x4E3A;&#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x547D;&#x540D;</a></li>
+<li><a href="interview/python/python-3.md">&#x7EDF;&#x8BA1;&#x5E8F;&#x5217;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x51FA;&#x73B0;&#x9891;&#x5EA6;</a></li>
+<li><a href="interview/python/python-4.md">&#x5BF9;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x9879;&#x6839;&#x636E;&#x5176;&#x503C;&#x7684;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</a></li>
+<li><a href="interview/python/pyenv-mac.md">&#x4E3A;Mac &#x8BBE;&#x7F6E;Python&#x591A;&#x7248;&#x672C;&#x5F00;&#x53D1;&#x73AF;&#x5883;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">NODEJS&#x7CFB;&#x5217;</a></li>
+<li><a href="README-JAVASCRIPT.md">SWIFT&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/swift/swift-share.md">iOS &#x5FAE;&#x4FE1; QQ &#x767B;&#x9646; &#x5206;&#x4EAB;</a></li>
+<li><a href="interview/swift/swift-base-animation.md">&#x5143;&#x82B3;&#xFF0C;iOS &#x56DB;&#x5927;&#x90AA;&#x672F;&#x4E4B;&#x4E00;&#xFF0C;&#x4F60;&#x600E;&#x4E48;&#x770B;&#xFF1F;</a></li>
+<li><a href="interview/swift/swift-app.md">IOS APP &#x4FA7;&#x8FB9;&#x680F;&#x6ED1;&#x52A8;</a></li>
+</ul>
+</li>
+<li><a href="README-SPRINT-BOOT.md">SPRING-BOOT&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/spring-boot/sp-jianshu.md">Spring MVC&#x6CE8;&#x89E3;&#x7BC7;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">TOOLS&#x7CFB;&#x5217;</a><ul>
+<li><a href="interview/tools/nginx.md">Nginx &#x7ECF;&#x5178;&#x7F8E;&#x6587;</a></li>
+<li><a href="interview/tools/eslint-rules.md">EsLint&#x89C4;&#x5219;&#x4E0E;&#x914D;&#x7F6E;</a></li>
+<li><a href="interview/tools/mac-path.md">mac osx&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4EE5;&#x53CA;&#x52A0;&#x8F7D;&#x987A;&#x5E8F;</a></li>
+<li><a href="interview/tools/mac-svn.md">Mac&#x81EA;&#x5E26; SVN &#x547D;&#x4EE4;&#x7B80;&#x6D01;&#x64CD;&#x4F5C;</a></li>
+</ul>
+</li>
+<li><a href="README-JAVASCRIPT.md">&#x6570;&#x636E;&#x5E93;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-01-31T09:43:55.029Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-20T01:42:19.175Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

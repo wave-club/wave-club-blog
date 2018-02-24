@@ -1,0 +1,61 @@
+.feedback {
+  color: #111;
+  box-sizing: border-box;
+}
+.feedback .feedback-score {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.feedback .feedback-score span {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+.feedback  .feedback-scorebar {
+  width: 6rem;
+  height: 1.2rem;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+  border-radius: 4px;
+}
+.feedback  .feedback-scorebar .feedback-scorebar-current {
+  width: 30%;
+  height: 1.2rem;
+  background-color: #09BE8C;
+  border-radius: 4px;
+  box-shadow: 2px 1px 20px 0 #09BE8C;
+}
+.feedback h3 {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.feedback .feedback-area {
+  width: 10rem;
+  height: 3rem;
+  border : none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2rem;
+}
+.feedback .feedback-footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  width: 10rem;
+  height: 1.4rem;
+}
+.feedback .feedback-footer .feedback-submit {
+  width: 8rem;
+  height: 1.4rem;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  background-color: #09BE8C;
+  text-align: center;
+  font-size: 0.5rem;
+  border:0;
+  outline: none;
+  letter-spacing: 0.2rem;
+}

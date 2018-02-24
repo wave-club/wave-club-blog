@@ -1,0 +1,11 @@
+.eslintignore
+.idea
+.DS_Store
+npm-debug.log
+eslintrc.js
+node_modules
+settings.json
+dist
+*.zip
+*.tar.gz
+package-lock.json

@@ -28,11 +28,3 @@ const imgClip = (image, boxWidth = 164, boxHeight = 164) => {
     image.style.opacity = 1
     image.style.filter = 'alpha(opacity=100)'
 }
-
-
-// RemoveBadPathImages.js
-document.addEventListener("DOMContentLoaded", function(event) {
-    document.querySelectorAll('img').forEach(function(img){
-        img.onerror = function(){this.style.display='none';};
-    })
-});
