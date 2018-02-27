@@ -119,6 +119,7 @@ npm install rtcs --save
     - [单行居中显示文字，多行居左显示，最多两行超过用省略号结尾](./interview/css/css-text-overflow.md)
 * [JAVASCRIPT系列](README-JAVASCRIPT.md)
     - [主流浏览器内核介绍和历史](./interview/javascript/js-brower-history.md)
+    - [浏览器线程阻塞](./interview/javascript/browser.md)
     - [浏览器内核和JavaScript单线程](./interview/javascript/js-webkit.md)
     - [浏览器进程？线程？傻傻分不清楚！](./interview/javascript/js-webkit-thred.md)
     - [js箭头函数](./interview/javascript/js-arr-func.md)
