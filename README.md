@@ -53,11 +53,11 @@ npm install rtcs --save
      * **使用方式  Number(1514764800).toDistanceNow()
      * **返回值  "5天前"
      **/
-     
-     
-     
-     
-     
+
+
+​     
+​     
+​     
 
 
 
@@ -110,6 +110,7 @@ npm install rtcs --save
     - [css 清除浮动](./interview/css/css-clear-float.md)
     - [如何清理浮动（2）](./interview/css/css-clear.md)
     - [CSS 继承](./interview/css/css-extend.md)
+    - [7种方式解决1px问题](./interview/css/dpr1px.md)
     - [CSS3有哪些新特性](./interview/css/css-new.md)
     - [css单位有哪些](./interview/css/css-pixel.md)
     - [css选择符](./interview/css/css-selected.md)
