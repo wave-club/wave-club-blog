@@ -106,6 +106,7 @@ npm install rtcs --save
     - [块级格式化上下文bfc](./interview/css/css-bfc.md)
     - [纯CSS绘制三角形](./interview/css/css-triangle.md)
     - [css定义的权重](./interview/css/css-qz.md)
+    - [pc 和移动端的区别](./interview/css/pc2mb.md)
     - [position的值relative和absolute定位原点是](./interview/css/css-position-relative.md)
     - [css 清除浮动](./interview/css/css-clear-float.md)
     - [如何清理浮动（2）](./interview/css/css-clear.md)
