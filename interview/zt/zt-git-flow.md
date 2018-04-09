@@ -131,7 +131,7 @@ git clone  https://github.com/976500133/FETopic.git
 2.首先切换到devlop分支 (devlop 也可以叫其他的， 比如deploy 等)
 
 ```nginx
-git checkout -b devlop ( 确保 devlop是 基于 master 新建的， 也就是在master 的分支上运行  )
+git checkout -b devlop ( 及其重要：一定要确保 devlop是 基于 master 新建的， 也就是在master 的分支上运行  )
 ```
 
 
