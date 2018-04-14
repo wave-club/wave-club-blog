@@ -12,8 +12,8 @@ npm install rtcs --save
 # Util
 
 
-### 项目目录结构
------------------
+### 项目目录结构(极速加快开发)
+
 
 |--Date.js （时间处理方法）<br />
 |&emsp;&emsp;|-------  Date.prototype.format  <br />
