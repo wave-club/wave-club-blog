@@ -9,3 +9,5 @@ dist
 *.zip
 *.tar.gz
 package-lock.json
+.*.md
+
