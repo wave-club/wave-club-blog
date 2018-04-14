@@ -151,7 +151,7 @@ git checkout -b feature-user-profile
 5.测试没问题，提交更改
 
 ```nginx
-git add .   // feature-user-profile 
+git add ../zt   // feature-user-profile 
 git commit -m "add user-profile feature "
 ```
 
@@ -185,7 +185,7 @@ git rebase origin/master
 
 //如果出现冲突 conflict , 解决完之后 执行
 
-git add .
+git add ../zt
 git rebase --continue //多次冲突的话需要多次执行命令 
 
 //如果放弃的话， 使用如下命令
