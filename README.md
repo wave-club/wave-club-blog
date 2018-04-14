@@ -66,11 +66,14 @@ npm install rtcs --save
 # Interview
 
 * [本书简介](README.md)
-* [专题系列](zt.md)
+
+* [HTML系列](git.md)
+    - [git 使用](interview/git/zt-git.md)
+    - [git 多人协同开发](interview/git/zt-git-flow.md)
     - [如何实现一个 Git Diff 解析器](interview/git/zt-diff.md)
+* [专题系列](zt.md) 
     - [react-redux 之 connect 方法详解](./interview/zt/js-redux.md)
     - [细说 webpack 之流程篇](./interview/zt/zt-webpack.md)
-    - [git 使用](interview/git/zt-git.md)
     - [网络传输](./interview/zt/zt-network.md)
     - [算法题目](./interview/zt/zt-suanfa.md)
     - [说话的艺术](./interview/zt/zt-hr.md)
