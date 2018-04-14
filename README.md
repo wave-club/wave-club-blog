@@ -67,7 +67,7 @@ npm install rtcs --save
 
 * [本书简介](README.md)
 
-* [HTML系列](git.md)
+* [git系列](git.md)
     - [git 使用](interview/git/zt-git.md)
     - [git 多人协同开发](interview/git/zt-git-flow.md)
     - [如何实现一个 Git Diff 解析器](interview/git/zt-diff.md)
