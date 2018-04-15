@@ -102,7 +102,7 @@ sent_http_HEADER
 
 例如 
 
-![request Header](./assets/nginx-1.png)
+![request Header](../assets/nginx-1.png)
 
 
 比如最后1个，在日志请求中就写 以$调用, 大写全变小写，- 改成 _
