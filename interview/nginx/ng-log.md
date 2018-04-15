@@ -1,15 +1,15 @@
 Nginx 日志 log_format
 
-##1.Nginx 日志类型
+## 1.Nginx 日志类型
 
-####error.log
+#### error.log
 所有错误的http状态和服务的错误信息
 
-####access_log
+#### access_log
 Nginx 每一次请求的访问状态
 
 
-##log_format 配置语法
+## log_format 配置语法
 
     Syntax:	access_log path [format [buffer=size] [gzip[=level]] [flush=time] [if=condition]];
     access_log off;
@@ -20,7 +20,7 @@ Nginx 每一次请求的访问状态
     
 Syntax 配置语法
 Context 只的是配置在哪个模块下面
-##示例
+## 示例
 
 
 
@@ -90,11 +90,11 @@ tail -f /usr/local/var/log/nginx/access.log
     192.168.0.102 - - [15/Apr/2018:07:52:38 +0800] "GET /assets/img/tuwen_bg.png HTTP/1.1" 200 2149150 "http://192.168.0.102:8091/myrzx/main.e336e22ec5a351a2920c.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"      
       
       
-##log_format是按照 不同的变量组合， nginx 变量有哪些？
+## log_format是按照 不同的变量组合， nginx 变量有哪些？
 
 nginx 变量主要分为 HTTP 请求变量， 内置变量 ， 自定义变量
 
-####1.HTTP 请求变量 
+#### 1.HTTP 请求变量 
 
 arg_PARAMETER  
 http_HEADER
@@ -110,7 +110,7 @@ sent_http_HEADER
 log_format main_test '$http_user_agent'
       
       
-####2.Nginx 内置变量 
+#### 2.Nginx 内置变量 
 
       官网地址
       http://nginx.org/en/docs/http/ngx_http_core_module.html#var_status
