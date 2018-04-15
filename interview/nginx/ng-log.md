@@ -1,4 +1,4 @@
-Nginx 日志 log_format
+#Nginx 日志 log_format
 
 ## 1.Nginx 日志类型
 
