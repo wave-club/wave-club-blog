@@ -177,7 +177,7 @@ npm install rtcs --save
 * [SPRING-BOOT系列](README-SPRINT-BOOT.md)
     - [Spring MVC注解篇](./interview/spring-boot/sp-jianshu.md)
 * [Nginx 全面介绍](README-mobile.md)
-    - [Nginx 经典美文](./interview/tools/nginx.md)
+    - [Nginx 经典美文](interview/nginx/nginx.md)
     - [Nginx log_format](./interview/nginx/ng-log.md)
 * [TOOLS系列](README-JAVASCRIPT.md)
     - [EsLint规则与配置](./interview/tools/eslint-rules.md)

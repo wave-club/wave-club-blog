@@ -2,7 +2,7 @@
 
 
 
-####nginx 常用命令
+#### nginx 常用命令
 
     nginx  -c /etc/nginx/nginx.conf #nginx启动,conf 可以自己指定或者删除
     nginx -s stop #停止nginx
@@ -34,7 +34,7 @@
 
 
 
-##nginx 限制ip访问
+## nginx 限制ip访问
 
     server {
         listen 80;
@@ -81,7 +81,7 @@
 
 
 
-##开启gzip 压缩性能优化
+## 开启gzip 压缩性能优化
     gzip on; #开启压缩
     gzip_static on; #告诉nginx在压缩资源之前，先查找是否有预先gzip处理过的资源。这要求你预先压缩你的文件（在这个例子中被注释掉了），从而允许你使用最高压缩比，这样nginx就不用再压缩这些文件了
     gzip_min_length  1k;   #允许压缩页面的最小字节数
@@ -94,7 +94,7 @@
 
 
 
-##nginx图片及目录防盗链
+## nginx图片及目录防盗链
 
 什么是防盗链系统
 
@@ -124,10 +124,10 @@
 
 
 
-##nginx 负载均衡 load balance
+## nginx 负载均衡 load balance
 
 
-######nginx的upstream目前支持4种方式的分配
+###### nginx的upstream目前支持4种方式的分配
 　　<code>1)、</code> 轮询（默认） 每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。
 　　<code>2)、</code>weight 指定轮询几率，weight和访问比率成正比，用于后端服务器性能不均的情况。
 　　<code>3)、</code>ip_hash 每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。
@@ -163,25 +163,25 @@
     }
 
 
-##nginx 配置expires缓存实现性能优化
+## nginx 配置expires缓存实现性能优化
 
 >expires功能就是允许通过nginx配置文件控制http的expires和cache-control响应头的内容。告送浏览器是否缓存和缓存多长时间。
 
-######(1).根据文件扩展名进行判断
+###### (1).根据文件扩展名进行判断
 
     location ~ .*\.(gif | jpg | jpeg | png | nmp | swf)$ {
         expires 365d;
     }  
-######(2).缓存某个特定的文件
+###### (2).缓存某个特定的文件
     location ~(robots.txt) {
         expires 7d;
         break;
     }
 
 
-##nginx 日志相关优化
+## nginx 日志相关优化
 
-######1）.配置日志切割脚本
+###### 1）.配置日志切割脚本
 
     vim cut_nginx_log.sh
     #!/bin/bash
@@ -199,7 +199,7 @@
     }
 
 
-##Rewrite规则
+## Rewrite规则
 
     location  = / {
       # 精确匹配 / ，主机名后面不能带任何字符串
@@ -252,7 +252,7 @@
 >~* 开头表示不区分大小写的正则匹配
 >/ 通用匹配, 如果没有其它匹配,任何请求都会匹配到
 
-######so,实战项目一般这样
+###### so,实战项目一般这样
 
     所以实际使用中，个人觉得至少有三个匹配规则定义，如下：
     #直接匹配网站根，通过域名访问网站首页比较频繁，使用这个会加速处理，官网如是说。
@@ -276,7 +276,7 @@
         proxy_pass http://tomcat:8080/
     }
 
-##优雅的显示错误页面
+## 优雅的显示错误页面
 
     server {
       ......
@@ -285,7 +285,7 @@
       ......
     }
 
-##模块(心跳检查)nginx_upstream_check_module
+## 模块(心跳检查)nginx_upstream_check_module
 
 1.下载模块包 wget https://github.com/yaoweibin/nginx_upstream_check_module/archive/v0.3.0.tar.gz
 ____
@@ -322,7 +322,7 @@ ____
 
 
 
-##最后记录一些常用的默认配置,不需要修改就行
+## 最后记录一些常用的默认配置,不需要修改就行
 
     error_log    logs/error.log warn;
 指定error_log的日志文件为logs/error.log并设置记录级别为warning。
