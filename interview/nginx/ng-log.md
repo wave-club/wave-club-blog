@@ -45,6 +45,16 @@ Context 只的是配置在哪个模块下面
             include       mime.types;
             default_type  application/octet-stream;
         
+            //这些是默认的配置
+            //$remote_addr 客户端地址
+            //$remote_user 客户端的认证的用户名， 默认不开启
+            //$time_local nginx 的时间
+            //$request 表示http 的请求头
+            //$status 表示response 返回的状态
+            //$body_bytes_sent reponse 响应的大小
+            //$http_referer 表示 refer 来源 
+            //$http_user_agent 标准的http 头信息， 表示客户端的访问工具
+            //$http_x_forwarded_for 记录每一级用户http 请求携带的http 信息
             log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
                               '$status $body_bytes_sent "$http_referer" '
                               '"$http_user_agent" "$http_x_forwarded_for"';
