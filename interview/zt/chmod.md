@@ -1,7 +1,6 @@
 ## 深入理解chmod xxxx 四位数字
 
 
-
 通常我们如果修改一个文件的权限，使用`chmod`命令。一般的用法是：
 
 ```
@@ -25,15 +24,81 @@ x---->1
 
 因此`chmod 755 FILENAME`代表的意思就是，属主具备读写执行权限，同一组的用户具备读执行权限，其他用户具备读执行权限.
 
-回到之前的`0`数字这里，四位数字中的第一位数字具备什么含义呢？
+文件的权限
+chmod 命令用于改变文件或者目录的访问权限，Linux系统可以控制谁通过何种方式对文件或者目录进行访问与操作。
 
-在这里说明一下`chmod`权限选项：
-`4000` Sets user ID on execution
-`2000` Sets group ID on execution
-`1000` Sets the link permission to directoires or sets the save-text attribute for files.
-(详细参考《mstering unix shell scripting》- Part1 - File permissons (54 of 1035))
+文件或者目录的访问角色可以分为三类：文件所有者也叫当前用户(u)、与当前用户同组的用户(g)、除了目录或者文件的当前用户或群组之外的用户或者群组(o)，所有者一般是文件的创建者，他可以给其他角色分配不同的权限。
 
-所以当`chmod 4755 my_program`的时候，无论谁执行了这个文件，都相当于属主执行。
+文件或者目录的访问权限也可以分为三种：只读(r)、只写(w)与可执行(x)，只读表示只允许读文件，可执行表示可以将文件作为一个程序执行。
 
+每一个文件或者目录的访问权限可以分为三组，以空格分开，分别表示所有者的读写执行权限、同组用户的读写执行权限、其他用户的读写执行权限。
 
+使用 ls -al可以看到每个文件或者目录的权限，例如
 
+drwxr-xr-x   3 abby  staff  102 12  5 16:16 Linux
+-rw-r--r--   1 abby  staff  251 12  5 16:12 hello.py
+其中 d 表示 Linux 是一个目录 ，而下面的 - 表示 README.md 是一个文件
+
+对于我上面中的 Linux 这个目录而言，rwxr-xr-x 种 rwx 表示所有者有读写与执行的权限， r-x表示同组用户有读与执行的权限，第二个 r-x 表示其他用户拥有读与执行的权限。
+
+chmod 的用法
+交代清楚文件的权限之后，现在说说 chmod 的用法。很简单：
+
+chmod [-cfvR] [--help] [--version] mode file
+其中 mode 是权限设置字符串，有两种格式，一种是包含字母和操作符号的文字设定法，用法如[who] [+|-|=]［mode］,另一种就是数字设定法。
+
+其中参数选择:
+
+-c : 若权限确实已经更改，才显示其更改动作
+-f : 若权限无法被更改也不要显示错误讯息
+-v : 显示权限变更的详细资料
+-R : 对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)
+文字设定法
+who 表示文件的访问操作角色，包括 u g o a，其中 u 表示文件所有者即当前的用户，g 表示同组用户，o 表示其他用户，a 表示全部用户 。
+
++表示增加权限， -表示减少权限， =表示将权限指定为指定的值。
+
+mode 包括对文件的操作，包括 r, w, x。r表示读权限， w表示写权限， x表示执行权限。
+
+例如:
+
+给全部用户增加 hello.py 的可执行权限
+
+chmod a+x hello.py
+a表示全部用户 ， + 表示增加权限， x表示可执行权限，接着我们可以看到 hello.py 的权限如下
+
+-rwxr-xr-x   1 abby  staff   20 12  5 15:40 hello.py
+给同组用户增加写权限，给其他用户不可执行权限
+
+chomd g+w,o-x hello.py
+给demo目录下面所有的文件夹增加同组用户可写，其他用户不可写的权限
+
+chomd -R g+w,o-w demo
+数字设定法
+每个权限有特定的数字表示，其中r的值为4，w的值为2，x的值为1。
+
+因此读写权限表示为 4+2=6，读写执行的权限表示为 4+2+1=7，写与执行的权限表示为 2+1=3。
+
+例如：
+
+chmod u=rwx,g=rx,o=x hello.py
+
+##可以表示为
+
+chmod 751
+chmod =r hello.py  或者 chmod ugo=r hello.py // 表示为所有用户分配只读权限
+
+## 可以表示为
+
+chmod 444 hello.py
+@nodejh
+nodejh commented on 4 Jan
+给demo目录下面所有的文件夹增加同组用户可写，其他用户不可写的权限
+chomd -R g+w,o-w demo
+
+不只是文件夹，-R 参数会 遍历所有子目录及子目录中的文件，并设置其权限
+
+@LuckyAbby
+Owner
+LuckyAbby commented on 4 Jan
+是的 -R会以递回的方式对目录和子目录所有文件进行变更 @nodejh
