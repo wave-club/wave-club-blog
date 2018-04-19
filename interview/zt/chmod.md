@@ -35,8 +35,8 @@ chmod 命令用于改变文件或者目录的访问权限，Linux系统可以控
 
 使用 ls -al可以看到每个文件或者目录的权限，例如
 
-drwxr-xr-x   3 abby  staff  102 12  5 16:16 Linux
--rw-r--r--   1 abby  staff  251 12  5 16:12 hello.py
+    drwxr-xr-x   3 abby  staff  102 12  5 16:16 Linux
+    -rw-r--r--   1 abby  staff  251 12  5 16:12 hello.py
 其中 d 表示 Linux 是一个目录 ，而下面的 - 表示 README.md 是一个文件
 
 对于我上面中的 Linux 这个目录而言，rwxr-xr-x 种 rwx 表示所有者有读写与执行的权限， r-x表示同组用户有读与执行的权限，第二个 r-x 表示其他用户拥有读与执行的权限。
@@ -49,10 +49,10 @@ chmod [-cfvR] [--help] [--version] mode file
 
 其中参数选择:
 
--c : 若权限确实已经更改，才显示其更改动作
--f : 若权限无法被更改也不要显示错误讯息
--v : 显示权限变更的详细资料
--R : 对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)
+    -c : 若权限确实已经更改，才显示其更改动作
+    -f : 若权限无法被更改也不要显示错误讯息
+    -v : 显示权限变更的详细资料
+    -R : 对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)
 文字设定法
 who 表示文件的访问操作角色，包括 u g o a，其中 u 表示文件所有者即当前的用户，g 表示同组用户，o 表示其他用户，a 表示全部用户 。
 
@@ -67,13 +67,13 @@ mode 包括对文件的操作，包括 r, w, x。r表示读权限， w表示写�
 chmod a+x hello.py
 a表示全部用户 ， + 表示增加权限， x表示可执行权限，接着我们可以看到 hello.py 的权限如下
 
--rwxr-xr-x   1 abby  staff   20 12  5 15:40 hello.py
+    -rwxr-xr-x   1 abby  staff   20 12  5 15:40 hello.py
 给同组用户增加写权限，给其他用户不可执行权限
 
-chomd g+w,o-x hello.py
+    chomd g+w,o-x hello.py
 给demo目录下面所有的文件夹增加同组用户可写，其他用户不可写的权限
 
-chomd -R g+w,o-w demo
+    chomd -R g+w,o-w demo
 数字设定法
 每个权限有特定的数字表示，其中r的值为4，w的值为2，x的值为1。
 
@@ -81,24 +81,20 @@ chomd -R g+w,o-w demo
 
 例如：
 
-chmod u=rwx,g=rx,o=x hello.py
-
-##可以表示为
-
-chmod 751
-chmod =r hello.py  或者 chmod ugo=r hello.py // 表示为所有用户分配只读权限
+    chmod u=rwx,g=rx,o=x hello.py
 
 ## 可以表示为
 
-chmod 444 hello.py
-@nodejh
-nodejh commented on 4 Jan
+    chmod 751
+    chmod =r hello.py  或者 chmod ugo=r hello.py // 表示为所有用户分配只读权限
+
+## 可以表示为
+
+    chmod 444 hello.py
+
 给demo目录下面所有的文件夹增加同组用户可写，其他用户不可写的权限
 chomd -R g+w,o-w demo
 
 不只是文件夹，-R 参数会 遍历所有子目录及子目录中的文件，并设置其权限
 
-@LuckyAbby
-Owner
-LuckyAbby commented on 4 Jan
 是的 -R会以递回的方式对目录和子目录所有文件进行变更 @nodejh
