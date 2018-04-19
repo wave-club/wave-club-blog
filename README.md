@@ -41,6 +41,7 @@ npm install rtcs --save
 * [专题系列](zt.md) 
     - [react-redux 之 connect 方法详解](./interview/zt/js-redux.md)
     - [细说 webpack 之流程篇](./interview/zt/zt-webpack.md)
+    - [深入理解chmod xxxx 四位数字](./interview/zt/chmod.md)
     - [网络传输](./interview/zt/zt-network.md)
     - [算法题目](./interview/zt/zt-suanfa.md)
     - [说话的艺术](./interview/zt/zt-hr.md)
