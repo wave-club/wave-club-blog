@@ -10,4 +10,4 @@ dist
 *.tar.gz
 package-lock.json
 .*.md
-
+.*.js
