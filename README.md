@@ -9,17 +9,7 @@ npm install rtcs --save
 [详情文档](https://github.com/976500133/rtcs)
 
 
-# Util
-
-
-### 项目目录结构(极速加快开发)
-
-
-|--Date.js （时间处理方法）<br />
-|&emsp;&emsp;|-------  Date.prototype.format  <br />
-|&emsp;&emsp;|-------  Number.prototype.toDateFormat  <br />
-|&emsp;&emsp;|-------  Number.prototype.toDistanceNow  <br />
-
+# Util (极速加快开发)
 
 
 ### 使用展示
