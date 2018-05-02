@@ -204,3 +204,9 @@ git revert 命令的好处就是不会丢掉别人的提交，即使你撤销后
 > 1. 自己的分支回滚直接用reset
 > 2. 公共分支回滚用revert
 > 3. 错的太远了直接将代码全部删掉，用正确代码替代
+
+
+
+
+
+![结果线直了！！](/Users/liujunbin/Documents/project/mygithub/FETopic/interview/assets/git-reset3.png)
