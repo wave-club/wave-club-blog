@@ -10,7 +10,7 @@
 
 
 
-![](/Users/liujunbin/Documents/project/mygithub/FETopic/interview/assets/git-reset1.png)
+![](/interview/assets/git-reset1.png)
 
 
 
@@ -28,7 +28,7 @@ git reflog
 
 
 
-![](/Users/liujunbin/Documents/project/mygithub/FETopic/interview/assets/git-reset2.png)
+![](/interview/assets/git-reset2.png)
 
 
 
@@ -209,4 +209,4 @@ git revert 命令的好处就是不会丢掉别人的提交，即使你撤销后
 
 
 
-![结果线直了！！](/Users/liujunbin/Documents/project/mygithub/FETopic/interview/assets/git-reset3.png)
+![结果线直了！！](/interview/assets/git-reset3.png)
