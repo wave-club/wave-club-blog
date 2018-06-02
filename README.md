@@ -2,7 +2,7 @@
 
 ##### 1. 提交 [issues](https://github.com/976500133/FETopic/issues/new)
 ##### 2. 加群 Angular-开源2区（<code>457343712</code>）
-
+##### 3. 后续主要维护 [issues](https://github.com/976500133/FETopic/issues)
 
 
 
