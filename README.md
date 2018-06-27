@@ -1,5 +1,9 @@
-### 有想法或者想说的话，可以留言
+### FETopic and Article
 
+##### [FETopic](https://github.com/976500133/FETopic/issues) 记录的是技术问题
+##### [Article](https://github.com/976500133/Article/issues) 记录的是更深层的思考
+
+#### 参与方式
 ##### 1. 提交 [issues](https://github.com/976500133/FETopic/issues/new)
 ##### 2. 加群 Angular-开源2区（<code>457343712</code>）
 ##### 3. 后续主要维护 [issues](https://github.com/976500133/FETopic/issues)
