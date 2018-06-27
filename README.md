@@ -4,7 +4,7 @@
 ##### [Article](https://github.com/976500133/Article/issues) 记录的是更深层的思考
 
 #### 参与方式
-##### 1. 提交 [issues](https://github.com/976500133/FETopic/issues/new)
+##### 1. 提交 [FETopic-issues](https://github.com/976500133/FETopic/issues/new) 提交 [Article-issues](https://github.com/976500133/Article/issues/new)
 ##### 2. 加群 Angular-开源2区（<code>457343712</code>）
 ##### 3. 后续主要维护 [issues](https://github.com/976500133/FETopic/issues)
 
