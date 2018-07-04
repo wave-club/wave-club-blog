@@ -8,7 +8,7 @@
 ##### 2. 加群 Angular-开源2区（<code>457343712</code>）
 ##### 3. 后续主要维护 [issues](https://github.com/976500133/FETopic/issues)
 
-
+ > [2017年简书就暂停维护](https://www.jianshu.com/u/e0067da84ee0)
 
 ## React Rtcs
 
