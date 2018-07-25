@@ -3,6 +3,10 @@
 .audios {
     background: url('../../fetopic-assets/images/bg.jpg');
     background-position: -560px 0;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-size: cover;
 }
 
 #box
@@ -33,6 +37,7 @@
     color: deepskyblue;
     margin-bottom: 20px;
 }
+
 .circle img.star
 {
     border-radius: 50%;
@@ -67,7 +72,6 @@
     position: absolute;
     left: 5px;
     top: 2px;
-    z-index: -1;
 }
 .circle .run.rotate
 {

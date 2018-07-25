@@ -3,5 +3,6 @@
 .dashboard {
     margin-left: 220px;
     width: calc(100% - 220px);
-    padding: 20px;
+    position: absolute;
+    height: 100%;
 }
