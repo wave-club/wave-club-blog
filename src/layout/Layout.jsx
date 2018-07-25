@@ -52,7 +52,7 @@ class Layout extends React.Component {
                 <div className="app-layout">
                     <Router history={history}>
                         <div>
-                            <SideBar/>
+                            {/*<SideBar/>*/}
                             <Switch>
                                 <Route exact={true} path="/FETopic" render={() => <Dashboard />}/>
                                 <Redirect from='/*' to='/FETopic'/>

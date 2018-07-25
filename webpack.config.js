@@ -28,7 +28,7 @@ const config = {
         // the entry point of our app
     ],
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'static'),
         filename: '[name].[hash].js',
         publicPath: publicPath
     },
@@ -78,7 +78,7 @@ const config = {
         new webpack.HotModuleReplacementPlugin(), // enable HMR globally
         new webpack.NamedModulesPlugin(), // prints more readable module names in the browser console on HMR updates
         new webpack.NoEmitOnErrorsPlugin(),
-        new CleanWebpackPlugin('dist', {watch: false}),
+        new CleanWebpackPlugin('static', {watch: false}),
         new ExtractTextPlugin('[name].[hash].css'),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',

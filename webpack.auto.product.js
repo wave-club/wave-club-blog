@@ -48,7 +48,7 @@ const publicPath = "./"
 const config = {
     entry: entryFileName,
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'static'),
         filename: moduleParams + "-assets" + '/[name].[hash].js',
         publicPath: publicPath
     },
@@ -122,7 +122,7 @@ const config = {
             }
         ]
     }, plugins: [
-        new CleanWebpackPlugin('dist', {watch: false}),
+        new CleanWebpackPlugin('static', {watch: false}),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             minChunks: function (module) {
