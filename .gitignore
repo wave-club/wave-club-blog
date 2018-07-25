@@ -11,3 +11,4 @@ dist
 package-lock.json
 .*.md
 .*.js
+src/components/audios
