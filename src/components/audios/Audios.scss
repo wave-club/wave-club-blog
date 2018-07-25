@@ -1,2 +1,89 @@
 @import "../../mixin";
 
+.audios {
+    background: url('../../fetopic-assets/images/bg.jpg');
+    background-position: -560px 0;
+}
+
+#box
+{
+    width: 536px;
+    height: 536px;
+    background: url(../../fetopic-assets/images/yybw.png);
+    position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;/*自适应布局*/
+}
+.circle
+{
+    width: 415px;
+    height: 415px;
+    background: url(../../fetopic-assets/images/bg1.png);
+    position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;/*万能居中方法*/
+    text-align: center;
+    color: white;
+}
+.circle p.singer
+{
+    line-height: 30px;
+    color: white;
+}
+.circle p.song
+{
+    line-height: 60px;
+    font-size: 20px;
+    color: deepskyblue;
+    margin-bottom: 20px;
+}
+.circle img.star
+{
+    border-radius: 50%;
+}
+.circle img.btn
+{
+    position: absolute;
+    left: 180px;
+    top: 140px;
+    cursor: pointer;
+}
+.circle p.love
+{
+    background: url(../../fetopic-assets/images/ht.png) no-repeat;
+    float: left;
+    margin-left: 160px;
+    margin-right: 44px;
+    margin-top: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+.circle p.next
+{
+    background: url(../../fetopic-assets/images/next.png) no-repeat;
+    float: left;
+    margin-top: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+.circle img.run
+{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    z-index: -1;
+}
+.circle .run.rotate
+{
+    animation: rot 10s linear infinite;
+}
+@keyframes rot
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.circle .star.rotate
+{
+    animation: wo 10s linear infinite;
+}
+@keyframes wo
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
