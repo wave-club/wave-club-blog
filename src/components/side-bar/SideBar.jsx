@@ -69,16 +69,6 @@ class SideBar extends Component {
                         </Link>
                     </Menu.Item>
 
-                    <Menu.Item key="/web" className={'ant-menu-submenu-active'}>
-                        <a onClick={() => {alert('开发中')}}>
-                            <i className="anticon">
-                                <img src='https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/card.png' alt=""/>
-                            </i>
-                            <span>WEB 前端</span>
-                        </a>
-                    </Menu.Item>
-
-
 
                 </Menu>
             </div>
