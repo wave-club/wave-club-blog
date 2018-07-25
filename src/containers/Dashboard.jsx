@@ -1,9 +1,11 @@
+import './Dashboard.scss'
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {
     Route
 } from 'react-router-dom'
 
+import Audios from '../components/audios/Audios'
 
 class Dashboard extends Component {
 
@@ -21,7 +23,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="dashboard">
-                dashboard
+                <Audios/>
             </div>
         )
     }

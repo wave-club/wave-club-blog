@@ -91,7 +91,7 @@ class SideBar extends Component {
                         </Link>
                     </Menu.Item>
 
-                    <Menu.Item key="/subtitler" className={'ant-menu-submenu-active'}>
+                    <Menu.Item key="/subtitler2" className={'ant-menu-submenu-active'}>
                         <Link to={'/subtitler'}>
                             <i className="anticon">
                                 <img src={require('../../fetopic-assets/images/subtitler.png')} alt=""/>
