@@ -1,0 +1,141 @@
+/*公共的css，主要用于在所有页面都可能用到的样式*/
+@import "../../mixin";
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q {
+    &:before, &:after {
+        content: '';
+    }
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%;
+}
+
+legend {
+    color: #000;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f8f8f2 inset !important;
+}
+
+pre {
+    white-space: pre-line;
+    font-family: $fontFamily;
+}
+
+.f1 {
+    float: left;
+}
+
+.f2 {
+    float: right;
+}
+
+.clr {
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, legend, button form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    border: 0 none;
+}
+
+span {
+    display: inline-block;
+}
+
+textarea {
+    resize: none;
+}
+
+
+textarea, input, select, button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s color ease;
+}
+
+input {
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #f5f6f8 inset !important;
+    }
+
+    &[type="password"] {
+        -webkit-appearance: none !important;
+    }
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input::placeholder {
+    color: #cccccc;
+}
+input[disabled]{
+    background-color: #eee;
+}
+.ant-message {
+    text-align: center;
+}
