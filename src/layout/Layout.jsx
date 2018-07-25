@@ -54,8 +54,8 @@ class Layout extends React.Component {
                         <div>
                             <SideBar/>
                             <Switch>
-                                <Route exact={true} path="/" render={() => <Dashboard />}/>
-                                <Redirect from='/*' to='/'/>
+                                <Route exact={true} path="/FETopic" render={() => <Dashboard />}/>
+                                <Redirect from='/*' to='/FETopic'/>
                             </Switch>
                         </div>
                     </Router>
