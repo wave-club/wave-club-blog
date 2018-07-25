@@ -1,0 +1,98 @@
+@import "../../mixin";
+
+.side-bar::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+.side-bar {
+  width: 220px;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s all ease;
+  background-color: #393856;
+  z-index: 10;
+  overflow: auto;
+  &.hide {
+    display: none;
+  }
+  .side-bar-header {
+    height: 84px;
+    position: relative;
+    transition: .3s all ease;
+    h3 {
+      @include hlh(84px);
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      margin-left: 24px;
+    }
+    background-color: #2F304C;
+    .side-bar-btn {
+      position: absolute;
+      right: 16px;
+      top: 32px;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      background: transparent url('https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/side-icon.png') no-repeat 50%;
+      background-size: 100%;
+      border: 0 !important;
+      .anticon-menu-fold:before, .anticon-menu-unfold:before {
+        content: '';
+      }
+
+    }
+  }
+  .side-bar-body {
+    position: absolute;
+    height: calc(100% - 84px);
+    background-color: #393856;
+    padding-top: 30px;
+    .ant-menu-item, .ant-menu-submenu-title {
+      box-sizing: border-box;
+      @include hlh(68px);
+      text-align: left;
+      color: #ffffff;
+      opacity: 1 !important;
+      letter-spacing: 3px;
+      font-weight: 300;
+      margin: 0;
+      // margin: 15px 0;
+      img {
+        width: 25px;
+        margin-top: -6px;
+      }
+      span {
+        font-size: 14px !important;
+      }
+    }
+    .ant-menu-item-selected, .ant-menu-item:hover, .ant-menu-submenu-title:hover {
+      background-color: #2F304C;
+      opacity: 1 !important;
+    }
+    .ant-menu-item {
+      .anticon {
+        margin-right: 10px;
+      }
+      span {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+}
+
+.ant-menu-sub {
+  z-index: 999;
+}
+
+.ant-menu {
+  position: relative;
+  .ant-menu-item:last-of-type {
+    margin-bottom: 1px;
+  }
+}
+
+.kol-ctr {
+  padding-left: 30px !important;
+}

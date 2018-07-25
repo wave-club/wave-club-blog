@@ -11,8 +11,3 @@ dist
 package-lock.json
 .*.md
 .*.js
-src
-webpack.**
-.eslintrc
-.babelrc
-.jsbeautifyrc

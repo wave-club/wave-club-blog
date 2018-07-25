@@ -1,0 +1,53 @@
+@import "../../mixin";
+
+.btn-shadow {
+    border-radius: 36px;
+    background-image: linear-gradient(92deg, #1890ff, #1890ff);
+    box-shadow: -2px 4px 8px 0 rgba(88, 68, 176, 0.6);
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    transition: 0.4s all ease;
+
+}
+.btn-shadow[disabled] {
+    background: #ccc;
+    box-shadow: -2px 4px 8px 0 #ddd;
+}
+.btn-shadow:hover {
+    opacity: 0.8;
+}
+.btns-xxl {
+    width: 360px;
+    @include hlh(60px);
+}
+
+.btns-l {
+    width: 117px;
+    border-radius: 21px;
+    background-image: linear-gradient(94deg, #1890ff, #1890ff);
+    box-shadow: 0 1px 4px 0 rgba(61, 41, 97, 0.68);
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px !important;
+}
+.btns-xl {
+    width: 138px;
+    border-radius: 23px;
+    background-image: linear-gradient(94deg, #1890ff, #1890ff);
+    box-shadow: 2px 2px 4px 0 rgba(75, 58, 189, 0.22);
+    border: solid 1px #5d46b3;
+    font-size: 16px;
+    text-align: center;
+    @include hlh(46px);
+    display: inline-block;
+}
+
+
+.btn-warp {
+    margin-top: 60px;
+    text-align: center;
+}
