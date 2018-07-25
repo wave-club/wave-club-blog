@@ -17,33 +17,57 @@ class Audios extends Component {
 
     componentDidMount() {
 
-        var onOff=true;
-        $(".btn").click(function(){
-            if(onOff)
-            {
-                $(".btn").get(0).src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/pause.png";
-                $("#myMusic").get(0).play();
-                $(".run").addClass("rotate");
-                $(".star").addClass("rotate");
+        //代码网上获取， 没时间整理
+
+        var onOff = true
+        $(".btn").click(function () {
+            if (onOff) {
+                $(".btn").get(0).src = "https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/pause.png"
+                $("#myMusic").get(0).play()
+                $(".run").addClass("rotate")
+                $(".star").addClass("rotate")
             }
-            else
-            {
-                $(".btn").get(0).src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/play.png";
-                $("#myMusic").get(0).pause();
-                $(".run").removeClass("rotate");
-                $(".star").removeClass("rotate");
+            else {
+                $(".btn").get(0).src = "https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/play.png"
+                $("#myMusic").get(0).pause()
+                $(".run").removeClass("rotate")
+                $(".star").removeClass("rotate")
             }
-            onOff=!onOff;
-        });
-        var na=new Array();//歌手
-        na[0]="陈淑桦 ";
-        na[1]="周杰伦";
-        na[2]="李行亮";
-        var ng=new Array();//歌名
-        ng[0]="笑红尘";
-        ng[1]="青花瓷";
-        ng[2]="愿得一人心";
-        var n=0;
+            onOff = !onOff
+        })
+        var na = new Array()//歌手
+        na[0] = "陈淑桦 "
+        na[1] = "二月长河"
+        na[2] = "二月长河"
+        na[3] = "二月长河"
+        na[4] = "二月长河"
+        na[5] = "二月长河"
+        na[6] = "二月长河"
+        na[7] = "二月长河"
+        na[8] = "二月长河"
+        na[9] = "二月长河"
+        na[10] = "二月长河"
+        na[11] = "二月长河"
+        na[12] = "二月长河"
+        na[13] = "二月长河"
+        na[14] = "二月长河"
+        var ng = new Array()//歌名
+        ng[0] = "笑红尘"
+        ng[1] = "数据双向绑定"
+        ng[2] = "cdn基本原理和缓存"
+        ng[3] = "div居中的方式"
+        ng[4] = "输入url到页面显示过程"
+        ng[5] = "青花瓷"
+        ng[6] = "前端安全"
+        ng[7] = "http-https2.0区别"
+        ng[8] = "Http中四种方式解析"
+        ng[9] = "前端模块化和组件化"
+        ng[10] = "算法"
+        ng[11] = "javascript的内存管理"
+        ng[12] = "虚拟dom"
+        ng[13] = "初创公司技术选型"
+        ng[14] = "diff和vdom"
+        var n = 0
 
         let basePath = 'https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/audios/'
         let VIDEOS = [
@@ -64,26 +88,23 @@ class Audios extends Component {
             basePath + 'f512b61d4d69371280dd64d14faf74f4.mp3',
 
         ]
-        $(".next").click(function()
-        {
-            n++;
-            if(n>VIDEOS.length)
-            {
-                n=0;
+        $(".next").click(function () {
+            n++
+            if (n > VIDEOS.length) {
+                n = 0
             }
-            $("#myMusic").attr('src',VIDEOS[n]);
-            $(".star").attr('src','https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/'+n+'.jpg');
-            $(".singer").html(na[n]);
-            $(".song").html(ng[n]);
-            $(".btn").get(0).src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/pause.png";
-            $("#myMusic").get(0).play();
-            $(".run").addClass("rotate");
-            $(".star").addClass("rotate");
-            onOff=false;
-        });
-        $(".love").click(function()
-        {
-            alert("开发中！");
+            $("#myMusic").attr('src', VIDEOS[n])
+            $(".star").attr('src', 'https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/' + n + '.jpg')
+            $(".singer").html(na[n])
+            $(".song").html(ng[n])
+            $(".btn").get(0).src = "https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/pause.png"
+            $("#myMusic").get(0).play()
+            $(".run").addClass("rotate")
+            $(".star").addClass("rotate")
+            onOff = false
+        })
+        $(".love").click(function () {
+            alert("开发中！")
         })
 
     }
@@ -94,18 +115,24 @@ class Audios extends Component {
             <div className="audios">
                 <div id="box">
                     <div className="circle">
-                        <img src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/yyjd2.png" className="run"/>
+                        <img
+                            src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/yyjd2.png"
+                            className="run"/>
                         <p className="singer">陈淑桦</p>
                         <p className="song">笑红尘</p>
                         <div>
-                            <img src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/0.jpg" className="star" height="120px" width="120px" alt="陈淑桦"/>
-                            <img src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/play.png" className="btn" alt="开始" />
+                            <img
+                                src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/0.jpg"
+                                className="star" height="120px" width="120px" alt="陈淑桦"/>
+                            <img
+                                src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/play.png"
+                                className="btn" alt="开始"/>
                         </div>
                         <p className="love">好听</p>
                         <p className="next">切歌</p>
                     </div>
                 </div>
-                <audio src='../../fetopic-assets/audios/0.mp3' id="myMusic" />
+                <audio src='../../fetopic-assets/audios/0.mp3' id="myMusic"/>
 
             </div>
         )
