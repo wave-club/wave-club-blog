@@ -2,7 +2,7 @@
 
 ##### [FETopic](https://github.com/976500133/FETopic/issues) 记录的是技术问题
 ##### [Article](https://github.com/976500133/Article/issues) 记录的是更深层的思考
-##### [Github Page](https://976500133.github.io/FETopic/) 业余录音项目
+##### [Github Page](https://976500133.github.io/FETopic/) 及其业余录音项目
 #### 参与方式
 ##### 1. 提交 [FETopic-issues](https://github.com/976500133/FETopic/issues/new) 提交 [Article-issues](https://github.com/976500133/Article/issues/new)
 ##### 2. 加群 Angular-开源2区（<code>457343712</code>）
