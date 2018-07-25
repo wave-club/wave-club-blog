@@ -63,42 +63,25 @@ class SideBar extends Component {
                     className="side-bar-body"
                     inlineIndent={24}
                 >
-                    <SubMenu key="kol-manage1" className={'ant-menu-submenu-active'}
-                             title={<span>
-                                 <i className="anticon">
-                                <img src={require('../../fetopic-assets/images/people.png')} alt=""/>
-                            </i>
-                                 <span>WEB 前端</span>
-                             </span>}>
-                        <Menu.Item key="kol-manage-user1" className={'ant-menu-submenu-active'}>
-                            <Link className={'kol-ctr'} to={'/html'}>Html5</Link>
-                        </Menu.Item>
-                        <Menu.Item key="kol-manage-content1" className={'ant-menu-submenu-active'}>
-                            <Link className={'kol-ctr'} to={'/css'}>CSS</Link>
-                        </Menu.Item>
-                        <Menu.Item key="kol-manage-content1" className={'ant-menu-submenu-active'}>
-                            <Link className={'kol-ctr'} to={'/js'}>Javascript</Link>
-                        </Menu.Item>
-                    </SubMenu>
-
-
-                    <Menu.Item key="/subtitler" className={'ant-menu-submenu-active'}>
-                        <Link to={'/subtitler'}>
-                            <i className="anticon">
-                                <img src={require('../../fetopic-assets/images/subtitler.png')} alt=""/>
-                            </i>
-                            <span>iOS</span>
-                        </Link>
-                    </Menu.Item>
-
-                    <Menu.Item key="/subtitler2" className={'ant-menu-submenu-active'}>
-                        <Link to={'/subtitler'}>
+                    <Menu.Item key="/audio" className={'ant-menu-submenu-active'}>
+                        <Link to={'/audio'}>
                             <i className="anticon">
                                 <img src={require('../../fetopic-assets/images/subtitler.png')} alt=""/>
                             </i>
                             <span>我的录音</span>
                         </Link>
                     </Menu.Item>
+
+                    <Menu.Item key="/web" className={'ant-menu-submenu-active'}>
+                        <a onClick={() => {alert('开发中')}}>
+                            <i className="anticon">
+                                <img src={require('../../fetopic-assets/images/card.png')} alt=""/>
+                            </i>
+                            <span>WEB 前端</span>
+                        </a>
+                    </Menu.Item>
+
+
 
                 </Menu>
             </div>

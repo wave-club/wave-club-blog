@@ -99,3 +99,9 @@
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
+.side-bar .side-bar-body .ant-menu-item-selected, .side-bar .side-bar-body .ant-menu-item:hover, .side-bar .side-bar-body .ant-menu-submenu-title:hover {
+    background-color: #352164 !important;
+}
+.side-bar .side-bar-body, .side-bar .side-bar-header {
+    background-color: #1f1d47 !important;
+}
