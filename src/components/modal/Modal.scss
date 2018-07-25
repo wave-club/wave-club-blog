@@ -1,0 +1,29 @@
+@import "../../mixin";
+
+.modal {
+    @include fixed();
+    background-color: rgba(#000, 0.3);
+    z-index: 999;
+    .modal-title-bar {
+        @include hlh(50px);
+        font-size: $fontSizeHead;
+        color: $blackColor;
+        .close {
+            display: block;
+            @include box(20px , 20px);
+            padding: 10px;
+            @include absolute(15px,20px , auto , auto);
+            color: $grayColor;
+        }
+    }
+    .modal-body {
+        position: absolute;
+        margin: 0 auto;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        animation-duration: 0.4s;
+        border-radius: 6px;
+    }
+
+}

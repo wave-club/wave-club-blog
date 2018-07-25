@@ -1,0 +1,27 @@
+{
+    "mode": "beautify",
+    "methodchain": "chain",
+    "ternaryline": true,
+    "formatObject": "default",
+    "newline": true,
+    "wrap": 120,
+    "html": {
+        "tagsort": true
+    },
+    // "bracepadding": true, // for react-beautify
+    "brace_style": "collapse,preserve-inline" // { obj: format }
+    // "e4x": true, // render jsx code won't break
+    // "break_chained_methods": false
+    // "end_with_newline": false,
+    // "indent_with_tabs": false,
+    // "jslint_happy": false,
+    // "keep_array_indentation": false,
+    // "keep_function_indentation": false,
+    // "max_preserve_newlines": 4,
+    // "space_after_anon_function": false,
+    // "space_before_conditional": true,
+    // "unescape_strings": false,
+    // "wrap_attributes": "auto",
+    // "wrap_attributes_indent_size": 2,
+    // "wrap_line_length": 0,
+}

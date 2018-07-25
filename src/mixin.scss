@@ -1,0 +1,69 @@
+// 全局变量，函数
+
+
+$navbarHeight: 61px;
+
+// 网站主要颜色的配置板块
+$pinkColor: #FD4C86;
+$pinkLightColor: #FEEDF3;
+$blackColor: #3E3E3E;
+$whiteColor: #FFFFFF;
+$grayColor: #999999;
+$gray6aColor: #6A6A6A;
+$redColor : #FF0000;
+$purpleColor : #D03FB8;
+
+// 公共字体尺寸
+$fontSizeSmall: 12px;
+$fontSizeNormal: 14px;
+$fontSizeSubhead: 16px;
+$fontSizeHead: 18px;
+
+//公共字体
+$fontFamily: "PingFang SC", "Microsoft Yahei", "Arial", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", sans-serif;
+
+@mixin box($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin hlh($height) {
+    height: $height;
+    line-height: $height;
+}
+
+@mixin textCenter($display) {
+    display: $display;
+    text-align: center;
+}
+
+@mixin textOverflow() {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin fontSizeLineHeight($size:12,$height:18px) {
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin fixed($top:0,$right:0 , $bottom:0 , $left:0) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin absolute($top:0,$right:0 , $bottom:0 , $left:0) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin hover ($opacity:0.8){
+    opacity: $opacity;
+}
