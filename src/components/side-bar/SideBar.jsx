@@ -60,7 +60,7 @@ class SideBar extends Component {
                     className="side-bar-body"
                     inlineIndent={24}
                 >
-                    <Menu.Item key="/audio" className={'ant-menu-submenu-active'}>
+                    <Menu.Item key="/audio" className={'ant-menu-submenu-active ant-menu-item-selected'}>
                         <Link to={'/audio'}>
                             <i className="anticon">
                                 <img src='https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/subtitler.png' alt=""/>
