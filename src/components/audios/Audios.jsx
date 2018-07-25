@@ -132,7 +132,7 @@ class Audios extends Component {
                         <p className="next">切歌</p>
                     </div>
                 </div>
-                <audio src='../../fetopic-assets/audios/0.mp3' id="myMusic"/>
+                <audio src='https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/audios/0.mp3' id="myMusic"/>
 
             </div>
         )

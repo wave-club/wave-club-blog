@@ -12,7 +12,7 @@ function relativePath(dir) {
     return path.join(__dirname, dir)
 }
 //发布上线时地址配置
-const publicPath = "/fetopic-assets/"
+const publicPath = "static/"
 const config = {
     entry: [
         './src/main.js'
