@@ -74,7 +74,7 @@ class Audios extends Component {
             <div className="audios">
                 <div id="box">
                     <div className="circle">
-                        <img src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/yyjd.png" className="run"/>
+                        <img src="https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/yyjd2.png" className="run"/>
                         <p className="singer">陈淑桦</p>
                         <p className="song">笑红尘</p>
                         <div>
