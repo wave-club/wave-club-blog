@@ -1,10 +1,10 @@
-import {createHashHistory} from "history"
+import { createBrowserHistory } from "history"
 
 /**
  * @class 配置路由service
  **/
-const history = createHashHistory({
+const history = createBrowserHistory({
     forceRefresh: false,
-    basename: '/'
+    basename: ''
 })
 export default history
