@@ -1,5 +1,5 @@
 {
-  "name": "diyidan",
+  "name": "FETopic",
   "version": "0.1.0",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server",
