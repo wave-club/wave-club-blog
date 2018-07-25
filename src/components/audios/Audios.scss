@@ -29,6 +29,7 @@
 {
     line-height: 30px;
     color: white;
+    margin-top: 35px;
 }
 .circle p.song
 {
@@ -46,7 +47,7 @@
 {
     position: absolute;
     left: 180px;
-    top: 140px;
+    top: 175px;
     cursor: pointer;
 }
 .circle p.love
@@ -58,6 +59,9 @@
     margin-top: 20px;
     padding-top: 30px;
     cursor: pointer;
+    position: absolute;
+    left: 0;
+    z-index: 4;
 }
 .circle p.next
 {
@@ -66,6 +70,10 @@
     margin-top: 20px;
     padding-top: 30px;
     cursor: pointer;
+    position: absolute;
+    left: 240px;
+    z-index: 4;
+
 }
 .circle img.run
 {

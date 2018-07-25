@@ -44,14 +44,34 @@ class Audios extends Component {
         ng[1]="青花瓷";
         ng[2]="愿得一人心";
         var n=0;
+
+        let basePath = 'https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/audios/'
+        let VIDEOS = [
+            basePath + '0.mp3',
+            basePath + '03a403062a3c20cf65fc4a1afb14d541.mp3',
+            basePath + '0cb4a963a6e3a8c45737c9592b5f2cfb.mp3',
+            basePath + '256ea8fbbc6a53bb862ae89315adc9cf.mp3',
+            basePath + '264f196a7b8507e91d9311cf805b2511.mp3',
+            basePath + '1.mp3',
+            basePath + '340939f9bbf346ef4e44e6c616820f0c.mp3',
+            basePath + '465d88328c3a971ebe16b1e46b328ac2.mp3',
+            basePath + '67369d4e30690bb4ee30b10984284036.mp3',
+            basePath + '7fa353297612aabe15b1f0ed9aed1889.mp3',
+            basePath + '91e3211e1026890db15d1e3990e179f2.mp3',
+            basePath + '984820ba31b01d6ff9c46f6253be65f6.mp3',
+            basePath + 'bf38a39da75c7523bcade28782effc7c.mp3',
+            basePath + 'e26742890350af54d25c21c19a8ac547.mp3',
+            basePath + 'f512b61d4d69371280dd64d14faf74f4.mp3',
+
+        ]
         $(".next").click(function()
         {
             n++;
-            if(n>2)
+            if(n>VIDEOS.length)
             {
                 n=0;
             }
-            $("#myMusic").attr('src','music/'+n+'.mp3');
+            $("#myMusic").attr('src',VIDEOS[n]);
             $(".star").attr('src','https://raw.githubusercontent.com/976500133/FETopic/master/src/fetopic-assets/images/'+n+'.jpg');
             $(".singer").html(na[n]);
             $(".song").html(ng[n]);
@@ -63,7 +83,7 @@ class Audios extends Component {
         });
         $(".love").click(function()
         {
-            alert("感谢支持！");
+            alert("开发中！");
         })
 
     }
