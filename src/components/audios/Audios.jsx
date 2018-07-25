@@ -17,7 +17,7 @@ class Audios extends Component {
 
     componentDidMount() {
 
-        //代码网上获取， 没时间整理
+        //时间紧急，代码网上获取， 没时间整理
 
         var onOff = true
         $(".btn").click(function () {
@@ -55,7 +55,7 @@ class Audios extends Component {
         ng[0] = "笑红尘"
         ng[1] = "数据双向绑定"
         ng[2] = "cdn基本原理和缓存"
-        ng[3] = "div居中的方式"
+        ng[3] = "初创公司技术选型"
         ng[4] = "输入url到页面显示过程"
         ng[5] = "青花瓷"
         ng[6] = "前端安全"
@@ -65,7 +65,7 @@ class Audios extends Component {
         ng[10] = "算法"
         ng[11] = "javascript的内存管理"
         ng[12] = "虚拟dom"
-        ng[13] = "初创公司技术选型"
+        ng[13] = "div居中的方式"
         ng[14] = "diff和vdom"
         var n = 0
 
@@ -74,7 +74,7 @@ class Audios extends Component {
             basePath + '0.mp3',
             basePath + '03a403062a3c20cf65fc4a1afb14d541.mp3',
             basePath + '0cb4a963a6e3a8c45737c9592b5f2cfb.mp3',
-            basePath + '256ea8fbbc6a53bb862ae89315adc9cf.mp3',
+            basePath + 'e26742890350af54d25c21c19a8ac547.mp3',
             basePath + '264f196a7b8507e91d9311cf805b2511.mp3',
             basePath + '1.mp3',
             basePath + '340939f9bbf346ef4e44e6c616820f0c.mp3',
@@ -84,7 +84,7 @@ class Audios extends Component {
             basePath + '91e3211e1026890db15d1e3990e179f2.mp3',
             basePath + '984820ba31b01d6ff9c46f6253be65f6.mp3',
             basePath + 'bf38a39da75c7523bcade28782effc7c.mp3',
-            basePath + 'e26742890350af54d25c21c19a8ac547.mp3',
+            basePath + '256ea8fbbc6a53bb862ae89315adc9cf.mp3',
             basePath + 'f512b61d4d69371280dd64d14faf74f4.mp3',
 
         ]
