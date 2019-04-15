@@ -1,0 +1,106 @@
+@import "../../mixin";
+
+.audios {
+    background: url('https://raw.githubusercontent.com/976500133/FETopic/master/static/fetopic-assets/images/bg.jpg');
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-size: cover;
+}
+
+#box
+{
+    width: 536px;
+    height: 536px;
+    background: url(https://raw.githubusercontent.com/976500133/FETopic/master/static/fetopic-assets/images/yybw.png);
+    position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;/*自适应布局*/
+}
+.circle
+{
+    width: 415px;
+    height: 415px;
+    background: url(https://raw.githubusercontent.com/976500133/FETopic/master/static/fetopic-assets/images/bg1.png);
+    position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;/*万能居中方法*/
+    text-align: center;
+    color: white;
+}
+.circle p.singer
+{
+    line-height: 30px;
+    color: white;
+    margin-top: 35px;
+}
+.circle p.song
+{
+    line-height: 60px;
+    font-size: 20px;
+    color: deepskyblue;
+    margin-bottom: 20px;
+}
+
+.circle img.star
+{
+    border-radius: 50%;
+}
+.circle img.btn
+{
+    position: absolute;
+    left: 180px;
+    top: 175px;
+    cursor: pointer;
+}
+.circle p.love
+{
+    background: url(https://raw.githubusercontent.com/976500133/FETopic/master/static/fetopic-assets/images/ht.png) no-repeat;
+    float: left;
+    margin-left: 160px;
+    margin-right: 44px;
+    margin-top: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+}
+.circle p.next
+{
+    background: url(https://raw.githubusercontent.com/976500133/FETopic/master/static/fetopic-assets/images/next.png) no-repeat;
+    float: left;
+    margin-top: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 240px;
+    z-index: 4;
+
+}
+.circle img.run
+{
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+.circle .run.rotate
+{
+    animation: rot 10s linear infinite;
+}
+@keyframes rot
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.circle .star.rotate
+{
+    animation: wo 10s linear infinite;
+}
+@keyframes wo
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.side-bar .side-bar-body .ant-menu-item-selected, .side-bar .side-bar-body .ant-menu-item:hover, .side-bar .side-bar-body .ant-menu-submenu-title:hover {
+    background-color: #352164 !important;
+}
+.side-bar .side-bar-body, .side-bar .side-bar-header {
+    background-color: #1f1d47 !important;
+}
